@@ -16,7 +16,7 @@
     "dev": "yarn build && yarn dev:deploy:contract && parcel src/index.html"
   },
   "devDependencies": {
-    "assemblyscript": "^0.9.4",
+    "assemblyscript": "^0.10.0",
     "gh-pages": "^2.1.1",
     "jest": "^26.0.1",
     "jest-environment-node": "^26.0.1",
