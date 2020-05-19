@@ -21860,10 +21860,11 @@ function _makeApiCallAndSave() {
 
           case 10:
             _context3.next = 12;
-            return contract.totalSupply();
+            return contract.getResponse();
 
           case 12:
             apiResponse = _context3.sent;
+            // let apiResponse = await contract.totalSupply();
             console.log("".concat(apiResponse, " is the API response available to the Oracle on-chain"));
 
           case 14:
@@ -21917,7 +21918,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33249" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42131" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

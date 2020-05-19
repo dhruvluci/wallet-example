@@ -2,8 +2,8 @@ import { storage, logging } from "near-sdk-as";
 
 export function setResponse(apiResponse: u64): void {
   // logging.log("Writing the string [ " + apiResponse + " ] to the blockchain ...");
-  const TOTAL_SUPPLY: u64 = apiResponse;
-  storage.set<u64>("TOTAL_SUPPLY", TOTAL_SUPPLY);
+  // const TOTAL_SUPPLY: u64 = apiResponse;
+  storage.set<u64>("TOTAL_SUPPLY", apiResponse);
 }
 
 export function getResponse(): string {
@@ -23,7 +23,7 @@ import { context, storage, logging, PersistentMap } from "near-sdk-as";
 
 const balances = new PersistentMap<string, u64>("b:");
 const approves = new PersistentMap<string, u64>("a:");
-const TOTAL_SUPPLY = storage.get<u64>("TotalSupply")
+const TOTAL_SUPPLY = 100000000
 
 export function init(initialOwner: string): void {
   logging.log("initialOwner: " + initialOwner);
