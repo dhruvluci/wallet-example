@@ -21860,7 +21860,7 @@ function _makeApiCallAndSave() {
 
           case 10:
             _context3.next = 12;
-            return contract.getResponse();
+            return contract.totalSupply();
 
           case 12:
             apiResponse = _context3.sent;

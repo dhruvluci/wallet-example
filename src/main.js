@@ -94,6 +94,7 @@ async function makeApiCallAndSave() {
   await window.contract.setResponse({ apiResponse: data });
   // Check to see if the data was saved properly
   let apiResponse = await contract.getResponse();
+  // let apiResponse = await contract.totalSupply();
   console.log(`${apiResponse} is the API response available to the Oracle on-chain`);
 }
 // Function to update who said hi
