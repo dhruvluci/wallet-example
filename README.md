@@ -3,9 +3,9 @@ NEAR-ETH token interoperability
 
 NOTE: PLEASE SWITCH TO BRANCH NEWX FOR THE LATEST WORKING CODE
 
-This project demonstrates a basic token swap: It allows you to mint 1 N-DAI on the NEAR blockchain, for every Dai deposited in a designated ethereum contract. In turn, upon burning these N-DAI, the DAI in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
+This project demonstrates a basic token swap: It allows you to mint 1 N-ETH on the NEAR blockchain, for every Ether deposited in a designated ethereum contract. In turn, upon burning these N-ETH, the Ether in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
 
-With very minor changes, this could be used to carry out a 1:1 swap of any ERC20 token on the ethereum blockchain to a corresponding N-Token. The user workflow in our design is as follows:
+With very minor changes, this could be used to carry out a 1:1 swap of any ERC20 token on the ethereum blockchain to a corresponding ERC20 N-Token. The user workflow in our design is as follows:
 
 1. Deposit Ether to ETH address: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
 2. NEAR contract oracle detects deposited ETH. [Done] Demo: https://youtu.be/GkloVRmMz8U
