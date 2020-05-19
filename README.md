@@ -9,7 +9,7 @@ With very minor changes, this could be used to carry out a 1:1 swap of any ERC20
 
 1. Deposit Ether to ETH address: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
 2. NEAR contract oracle detects deposited ETH. [Done]
-3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [DONE]
+3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [DONE, newx2]
 4. N-ETH tokens can be freely exchanged on NEAR Blockchain [WIP]
 4. N-ETH can be burnt by specifying a ETH address to return the DAI [WIP] 
 
