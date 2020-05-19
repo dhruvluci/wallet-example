@@ -1,14 +1,17 @@
 NEAR-ETH token interoperability 
 ==================================
 
+NOTE: PLEASE SWITCH TO BRANCH NEWX FOR THE LATEST WORKING CODE
+
 This project demonstrates a basic token swap: It allows you to mint 1 N-DAI on the NEAR blockchain, for every Dai deposited in a designated ethereum contract. In turn, upon burning these N-DAI, the DAI in the designated contract is released back to the sender(or to any ETH address of the burner's choice).
 
 With very minor changes, this could be used to carry out a 1:1 swap of any ERC20 token on the ethereum blockchain to a corresponding N-Token. The user workflow in our design is as follows:
 
-1. Deposit DAI to ETH address
-2. NEAR contract detects deposited DAI and allows you to mint equivilant N-DAI
-3. N-DAI tokens can be freely exchanged on NEAR Blockchain
-4. N-DAI can be burnt by specifying a ETH address to return the DAI [NOTE: DAI RETURNS NON-FUNCTIONAL IN DEMO]
+1. Deposit Ether to ETH address: [0xc966Ba2a41888B6B4c5273323075B98E27B9F364]
+2. NEAR contract oracle detects deposited ETH. [Done]
+3. NEAR contract resets "TotalSupply" of N-ETH to match the total supply of locked ETH. [DONE]
+4. N-ETH tokens can be freely exchanged on NEAR Blockchain [WIP]
+4. N-ETH can be burnt by specifying a ETH address to return the DAI [WIP] 
 
 ## Getting started
 
