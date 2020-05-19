@@ -23,7 +23,7 @@ With very minor changes, this could be used to carry out a 1:1 swap of any ERC20
 
 5. N-ETH can be burnt by specifying a ETH address to return the collateral ETH [Ethereum contract] [WIP]
 
-![alt text]https://github.com/dhruvluci/wallet-example/blob/master/assets/Screenshot%202020-05-20%20at%203.38.22%20AM.png
+![alt text](https://github.com/dhruvluci/wallet-example/blob/master/assets/Screenshot%202020-05-20%20at%203.38.22%20AM.png)
 
 Getting started
 There are two ways to run this project. The first is the quick and a good way to instantly become familiar with this example. Once familiar, the next step is for a developer to create their own NEAR account and deploy the contract to testnet. This is covered in the following section.
